@@ -1,0 +1,10 @@
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
+
+#banner {
+  text-align: center;
+  font-size: 2em;
+  color: lighten($positive, 30%);
+  @include single-text-shadow;
+}

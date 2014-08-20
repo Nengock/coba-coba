@@ -1,0 +1,9 @@
+node_modules
+.tmp
+.sass-cache
+app/bower_components
+coverage
+*.swp
+*.swo
+*.log
+*.DS_Store

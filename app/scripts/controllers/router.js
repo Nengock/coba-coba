@@ -23,12 +23,5 @@ angular.module('mobileApp')
 })
 
 .controller('RouterCtrl', function($scope, $timeout) {
-  // make content center
-  $timeout(function() {
-    var elm = document.querySelector('#banner'),
-      windowHeight = window.innerHeight,
-      elmHeight = elm.offsetHeight;
 
-    elm.style.paddingTop = (windowHeight - elmHeight) / 2 + 'px';
-  });
 });

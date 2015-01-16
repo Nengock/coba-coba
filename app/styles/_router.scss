@@ -2,9 +2,21 @@ $default-text-shadow-color: rgba(red, 0.6);
 $default-text-shadow-blur: 3px;
 $default-text-shadow-v-offset: 1px;
 
-#banner {
+.flex-box {
+  display       : table !important;
+  width         : 100% !important;
+  height        : 100% !important;  
+}
+
+.vertical-align {
+  display: table-cell;
+  vertical-align: middle;
+  margin : auto;  
+}
+
+.banner {
   text-align: center;
-  font-size: 2em;
-  color: lighten($positive, 30%);
+  font-size : 2em;
+  color     : lighten($positive, 30%);
   @include single-text-shadow;
 }

@@ -28,39 +28,16 @@ Setup Compass for scss compiler
 
 Clone the code
 
-    $ git clone http://shrs-tr6.shrs.pitt.edu/git/mobile-app-scaffolding.git scaffolding-app
+    $ git clone https://github.com/Nengock/mhbb.git mhbb
 
 Move to code folder
 
-    $ cd scaffolding-app
+    $ cd mhbb
     $ npm install                 //install node dependencies
     $ bower install               //install app dependency components
 
 All the node dependencies will be installed under `node_modules` folder. All the components used by the app, will be installed under `bower_components`.
 
-### Setup apiEndPoint
-
-Update apiEndPoint depend on the API address in `Gruntfile.js`
-
-    ngconstant: {
-      ...
-      development: {
-        constants: {
-          ENV: {
-            name: 'development',
-            apiEndpoint: 'http://localhost/api-scaffolding/index.php/'
-          }
-        }
-      },
-      production: {
-        constants: {
-          ENV: {
-            name: 'production',
-            apiEndpoint: 'http://deploy-server/api/'
-          }
-        }
-      }
-    },
 
 ### Some commands that might be needed
 

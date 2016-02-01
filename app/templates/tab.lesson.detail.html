@@ -1,0 +1,32 @@
+
+<ion-view view-title="Questions">
+  <ion-content class="padding" overflow-scroll="true">
+    <form name="vm.form">
+        <wizard on-finish="vm.finishWizard()"> 
+          <wz-step title="Step 1" canexit="vm.exitValidation(vm.forms.step1)">
+            <formly-form model="vm.model" fields="vm.fields.step1" form="vm.forms.step1">
+              <div style="text-align:right">
+                <button type="submit" ng-disabled="vm.forms.step1.$invalid" wz-next class="button button-positive">Next</button>
+              </div>
+            </formly-form>
+          </wz-step>
+          <wz-step title="Step 2" canexit="vm.exitValidation(vm.forms.step2)">
+            <formly-form model="vm.model" fields="vm.fields.step2" form="vm.forms.step2">
+              <div style="text-align:right">
+                <button type="submit" ng-disabled="vm.forms.step2.$invalid" wz-next class="button button-positive">Next</button>
+              </div>
+            </formly-form>
+          </wz-step>
+          <wz-step title="Confirm">
+            <h2>Confirm</h2>
+            <div>Username: {{vm.model.email}}</div>
+            <div>First Name: {{vm.model.firstName}}</div>
+            <div>Last Name: {{vm.model.lastName}}</div>
+            <div style="text-align:right">
+              <button type="submit" ng-disabled="vm.form.$invalid" wz-finish class="button button-positive">Confirm</button>
+            </div>
+          </wz-step>
+        </wizard>
+      </form>
+  </ion-content>
+</ion-view>

@@ -8,6 +8,7 @@
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="styles/ionic.css">
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-wizard/dist/angular-wizard.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -16,7 +17,7 @@
     <!-- endbuild -->
   </head>
 
-  <body ng-app="mobileApp">
+  <body ng-app="mhbb">
 
     <ion-nav-view></ion-nav-view>
 
@@ -30,6 +31,10 @@
     <script src="bower_components/ionic/release/js/ionic.js"></script>
     <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/api-check/dist/api-check.js"></script>
+    <script src="bower_components/angular-formly/dist/formly.js"></script>
+    <script src="bower_components/angular-formly-templates-ionic/dist/angular-formly-templates-ionic.js"></script>
+    <script src="bower_components/angular-wizard/dist/angular-wizard.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -38,9 +43,22 @@
 
 
         <!-- build:js scripts/scripts.js -->
-        <script src="scripts/config.js"></script>
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/router.js"></script>
+        <script src="scripts/controllers.js"></script>
+        <script src="scripts/services.js"></script>
+
+        <script src="scripts/controllers/controller.dashboard.js"></script>
+        <script src="scripts/controllers/controller.lesson.detail.js"></script>
+        <script src="scripts/controllers/controller.review.js"></script>
+        <script src="scripts/controllers/controller.lessons.js"></script>
+        <script src="scripts/controllers/controller.lookup.js"></script>
+        <script src="scripts/controllers/controller.register.js"></script>
+        <script src="scripts/controllers/controller.settings.js"></script>
+
+        <script src="scripts/services/service.api.js"></script>
+        <script src="scripts/services/service.configuration.js"></script>
+        <script src="scripts/services/service.localstorage.js"></script>
+        <script src="scripts/services/service.util.js"></script>
         <!-- endbuild -->
 </body>
 </html>

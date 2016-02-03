@@ -2,9 +2,11 @@
 <ion-view view-title="Questions">
   <ion-content class="padding" overflow-scroll="true">
     <form name="vm.form">
+      
         <wizard on-finish="vm.finishWizard()"> 
           <wz-step title="Step 1" canexit="vm.exitValidation(vm.forms.step1)">
             <formly-form model="vm.model" fields="vm.fields.step1" form="vm.forms.step1">
+
               <div style="text-align:right">
                 <button type="submit" ng-disabled="vm.forms.step1.$invalid" wz-next class="button button-positive">Next</button>
               </div>

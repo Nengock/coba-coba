@@ -29,6 +29,15 @@
             placeholder: 'Email address',
             required: true
           }
+        },
+        {
+          key: 'toggle',
+          type: 'toggle',
+          templateOptions: {
+            label: 'Remember Me?',
+            toggleClass:"assertive",
+            toggleText:"online;offline"
+          }
         }
       ],
       step2: [

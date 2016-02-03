@@ -1,7 +1,13 @@
 (function() {
   'use strict';
 
-  angular.module('mhbb', ['ionic', 'formlyIonic','mgo-angular-wizard','mhbb.controllers', 'mhbb.services'])
+  angular.module('mhbb', [
+  'ionic',
+  'formlyIonic',
+  'mgo-angular-wizard',
+  'mhbb.controllers', 
+  'mhbb.services', 
+  'mhbb.directives'])
     .run(initializePlatform)
     .config(configureRoute);
 

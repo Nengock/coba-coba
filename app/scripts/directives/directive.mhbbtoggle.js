@@ -72,7 +72,7 @@ angular.module('mhbb.directives',[])
           // Ensure that the track element fits the largest text
           
           var wTrack = Math.max(wTrue, wFalse);
-          $track.css('width', (wTrack + 60) + 'px');
+          $track.css('width', (wTrack + 34) + 'px');
         }
       }
     }
